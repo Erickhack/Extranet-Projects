@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// Header of the site/application
+// -----------------------------------------------------------------------------
+
+.header-cover {
+  max-height: 30%;
+  .container-maket {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    img {
+      width: 100%;
+    }
+    span {
+      position: absolute;
+      color: white;
+      z-index: 10000;
+      bottom: 5px;
+      left: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.header-profile {
+  max-height: 30%;
+}

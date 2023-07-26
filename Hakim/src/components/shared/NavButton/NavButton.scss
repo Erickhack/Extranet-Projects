@@ -1,0 +1,30 @@
+.navigation-list {
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0;
+  width: 100%;
+  li {
+    margin: 0 auto;
+    padding: 5px 0;
+    position: relative;
+    cursor: default;
+    .opened {
+      display: block !important;
+    }
+
+    ul {
+      display: none;
+      list-style: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 30px;
+      line-height: 30px;
+      border-radius: 5px;
+      width: max-content;
+    }
+  }
+}

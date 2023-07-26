@@ -1,0 +1,11 @@
+.navigation-button-section {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  height: 100%;
+  .btn-nav-five {
+    grid-column: 1 / span 2;
+  }
+  * {
+    border: 1px solid black;
+  }
+}
