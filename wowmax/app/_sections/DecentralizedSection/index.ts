@@ -1,0 +1,1 @@
+export { DecentralizedSection } from './DecentralizedSection';

@@ -1,0 +1,116 @@
+@import '/shared/styles/animations.scss';
+
+.root {
+  @media (width < 1366px) {
+    padding: 56px 20px;
+  }
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  width: 100%;
+  padding: 120px 0;
+
+  overflow: hidden;
+}
+
+.animate {
+  .title,
+  .button,
+  .ticker {
+    animation: slide-in-base ease-out var(--fade-in-duration) forwards;
+  }
+  .card {
+    animation: fade-in-to ease-out var(--fade-in-duration) forwards;
+  }
+}
+
+.button {
+  width: max-content;
+
+  transform: translateY(100%);
+}
+
+.title {
+  @media (width < 1366px) {
+    max-width: 335px;
+    margin: 32px 0;
+
+    font-size: 34px;
+  }
+
+  margin: 60px 0;
+
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-fg-main);
+  text-align: center;
+
+  transform: translateY(100%);
+}
+
+.carousel {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.cards {
+  display: flex;
+
+  gap: 8px;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.card {
+  @media (width < 1366px) {
+    padding: 0;
+
+    opacity: 1;
+  }
+
+  width: 100%;
+  padding: 0 4px;
+
+  opacity: 0;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.ticker {
+  @media (width < 1366px) {
+    display: none;
+  }
+
+  transform: translateX(100%);
+  &:last-child {
+    margin-top: 8px;
+
+    transform: translateX(-100%);
+  }
+}
+
+.disclosure {
+  @media (width < 1366px) {
+    display: block;
+  }
+
+  display: none;
+}
+
+.list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}

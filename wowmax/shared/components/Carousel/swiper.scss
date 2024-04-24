@@ -1,0 +1,91 @@
+.swiper-carousel {
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 0;
+    right: var(--container-paddings-current);
+    z-index: 2;
+
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+
+    background-color: var(--color-bg-secondary);
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    transition: background-color var(--transition-preset);
+
+    &::before,
+    &::after {
+      content: '';
+
+      position: absolute;
+      inset: 0;
+
+      background-image: url('/images/arrow-right.svg');
+      filter: invert(1) brightness(0.8);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 24px;
+
+      transition: background-position var(--transition-preset);
+    }
+
+    &::after {
+      background-position: calc(-100% - 48px) center;
+    }
+
+    &:hover {
+      background-color: var(--color-bg-secondary-active);
+
+      &::before {
+        background-position: calc(100% + 48px) center;
+      }
+      &::after {
+        background-position: center;
+      }
+    }
+  }
+  .swiper-button-prev {
+    transform: translateX(calc(-100% - 16px));
+
+    &::before,
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  &.swiper-carousel-with-nav {
+    @media (width <= 1890px) {
+      padding-top: 96px;
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: block !important;
+      }
+    }
+
+    @media (width < 1366px) {
+      padding-top: 80px;
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        width: 56px;
+        height: 56px;
+
+        &::before,
+        &::after {
+          background-size: 18px;
+        }
+      }
+    }
+
+    padding-top: 0;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}

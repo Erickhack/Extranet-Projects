@@ -1,0 +1,183 @@
+@import '/shared/styles/animations.scss';
+
+.root {
+  @media (width < 1366px) {
+    min-height: 760px;
+    padding: 56px 20px;
+  }
+
+  padding: 80px;
+}
+
+.animateREMOVE {
+  .headerButton,
+  .title,
+  .buttons {
+    animation: slide-in-base ease-out var(--fade-in-duration) forwards;
+  }
+  .details,
+  .image {
+    animation:
+      slide-in-base ease-out var(--fade-in-duration) forwards,
+      fade-in-to ease-out var(--fade-in-duration) forwards;
+  }
+}
+
+.contentWrapper {
+  @media (width < 1366px) {
+    flex-direction: column;
+
+    padding: 0;
+  }
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 120px 0;
+  overflow: hidden;
+
+  background-color: var(--color-bg-purple);
+  border-radius: 36px;
+}
+
+.content {
+  @media (width < 1366px) {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 40px 20px 5px;
+  }
+
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1106px;
+}
+
+.headerButton {
+  width: max-content;
+
+  // transform: translateY(100%);
+}
+
+.title {
+  @media (width < 1366px) {
+    max-width: 348px;
+    margin-top: 16px;
+
+    font-size: 34px;
+    text-align: center;
+  }
+
+  max-width: 550px;
+  margin-top: 60px;
+
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-fg-main);
+
+  // transform: translateY(50%);
+}
+
+.details {
+  @media (width < 1366px) {
+    max-width: 348px;
+    margin: 16px 0 32px;
+
+    font-size: 16px;
+    text-align: center;
+  }
+
+  max-width: 550px;
+  margin: 24px 0 60px;
+
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-fg-main);
+
+  // transform: translateY(150%);
+}
+
+.buttons {
+  @media (width < 1366px) {
+    flex-direction: column;
+
+    gap: 8px;
+
+    width: 100%;
+    max-width: 100%;
+  }
+
+  display: flex;
+
+  gap: 16px;
+
+  max-width: 650px;
+
+  // transform: translateY(300%);
+}
+
+.button:first-child {
+  @media (width < 1366px) {
+    width: 100%;
+  }
+  width: 333px;
+  height: 66px;
+}
+.button:last-child {
+  @media (width < 1366px) {
+    width: 100%;
+  }
+  width: 303px;
+  height: 66px;
+}
+
+.backdrop {
+  @media (width < 1366px) {
+    position: static;
+
+    width: 100%;
+  }
+
+  position: absolute;
+  inset: 0;
+
+  overflow: hidden;
+}
+
+.imageWrapper {
+  @media (width <= 1920px) {
+    // transform: translateX(250px);
+  }
+
+  @media (width < 1366px) {
+    position: static;
+
+    // transform: translateX(35px);
+  }
+
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  @media (width < 1366px) {
+    position: static;
+  }
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  // transform: translateY(25%);
+}

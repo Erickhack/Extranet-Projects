@@ -1,0 +1,171 @@
+@import '/shared/styles/animations.scss';
+
+.root {
+  @media (width < 1366px) {
+    min-height: 700px;
+    padding: 56px 20px;
+  }
+
+  padding: 80px;
+}
+
+.animateREMOVE {
+  .button,
+  .title {
+    animation: slide-in-base ease-out var(--fade-in-duration) forwards;
+  }
+  .logoWrapper,
+  .image {
+    animation:
+      slide-in-base ease-out var(--fade-in-duration) forwards,
+      fade-in-to ease-out var(--fade-in-duration) forwards;
+  }
+}
+
+.contentWrapper {
+  @media (width < 1366px) {
+    flex-direction: column;
+
+    padding: 0;
+  }
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 120px 0;
+  overflow: hidden;
+
+  background-color: var(--color-bg-green);
+  border-radius: 36px;
+}
+
+.content {
+  @media (width < 1366px) {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 40px 20px 20px;
+  }
+
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1106px;
+}
+
+.button {
+  width: max-content;
+
+  // transform: translateY(100%);
+
+  // &:last-child {
+  //   // transform: translateY(300%);
+  // }
+}
+
+.title {
+  @media (width < 1366px) {
+    max-width: 324px;
+    margin-top: 16px;
+
+    font-size: 34px;
+    text-align: center;
+  }
+
+  max-width: 550px;
+  margin-top: 60px;
+
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-fg-main);
+
+  // transform: translateY(50%);
+}
+
+.logoWrapper {
+  @media (width < 1366px) {
+    margin: 16px 0 32px;
+  }
+
+  display: flex;
+
+  align-items: center;
+
+  margin: 32px 0 60px;
+
+  // opacity: 0;
+
+  // transform: translateY(200%);
+}
+
+.prefix {
+  @media (width < 1366px) {
+    font-size: 20px;
+  }
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-fg-main);
+}
+
+.logo {
+  @media (width < 1366px) {
+    width: 129px;
+    height: 30px;
+    margin-left: 16px;
+  }
+
+  width: 210px;
+  height: 50px;
+  margin-left: 32px;
+}
+
+.backdrop {
+  @media (width < 1366px) {
+    position: static;
+
+    width: 100%;
+  }
+
+  position: absolute;
+  inset: 0;
+
+  overflow: hidden;
+}
+
+.imageWrapper {
+  @media (width <= 1920px) {
+    // transform: translateX(160px);
+  }
+
+  @media (width < 1366px) {
+    position: static;
+
+    transform: none;
+  }
+
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+  @media (width < 1366px) {
+    position: static;
+  }
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  // transform: translateY(25%);
+}

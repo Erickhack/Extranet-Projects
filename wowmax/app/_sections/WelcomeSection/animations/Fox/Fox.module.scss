@@ -1,0 +1,127 @@
+.root {
+  position: relative;
+
+  width: 660px;
+  height: 671px;
+}
+
+.root > * {
+  position: absolute;
+}
+
+.stars {
+  @keyframes welcome-fox-stars {
+    0% {
+      opacity: 1;
+
+      transform: translateY(5px);
+    }
+    50% {
+      opacity: 0.6;
+
+      transform: translateY(-5px);
+    }
+    100% {
+      opacity: 1;
+
+      transform: translateY(5px);
+    }
+  }
+  top: 1.5%;
+  left: -10.8%;
+
+  animation-name: welcome-fox-stars;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.star {
+  @keyframes welcome-fox-star {
+    0% {
+      opacity: 1;
+
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+
+      transform: scale(1);
+    }
+  }
+  top: 19%;
+  left: -1%;
+
+  animation-name: welcome-fox-star;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.planet {
+  @keyframes welcome-fox-planet {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-180deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  top: 13.8%;
+  left: 25%;
+
+  animation-name: welcome-fox-planet;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.foxWrapper {
+  @keyframes welcome-fox-fox-wrapper {
+    0% {
+      opacity: 0.2;
+
+      transform: translate(-60%, 0%) rotate(-30deg) scale(0);
+    }
+    100% {
+      opacity: 1;
+
+      transform: translate(0%, 2%) rotate(1deg) scale(1);
+    }
+  }
+  top: 18%;
+  left: -3%;
+
+  animation-name: welcome-fox-fox-wrapper;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fox {
+  @keyframes welcome-fox-fox {
+    0% {
+      transform: translate(0%, 2%) rotate(1deg);
+    }
+    50% {
+      transform: translate(0%, -2%) rotate(-1deg);
+    }
+    100% {
+      transform: translate(0%, 2%) rotate(1deg);
+    }
+  }
+  animation-name: welcome-fox-fox;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}

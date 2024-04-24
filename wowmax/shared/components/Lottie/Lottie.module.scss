@@ -1,0 +1,5 @@
+@import '/shared/styles/animations.scss';
+
+.animate {
+  animation: fade-in var(--fade-in-preset);
+}

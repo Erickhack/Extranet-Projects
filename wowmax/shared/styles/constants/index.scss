@@ -1,0 +1,21 @@
+/* stylelint-disable scss/dollar-variable-empty-line-before */
+
+@import './colors.scss';
+
+$font-main: 'Poppins', 'Arial', sans-serif;
+
+$screen-xl: 1920px;
+$screen-lg: 1440px;
+$screen-md: 1366px;
+$screen-sm: 1024px;
+$screen-xs: 768px;
+
+$container-paddings-xl: 80px;
+$container-paddings-lg: 60px;
+$container-paddings-md: 32px;
+$container-paddings-xs: 20px;
+
+$fade-in-timing-func: cubic-bezier(0.34, 1.56, 0.64, 1);
+$fade-in-duration: 0.7s;
+$fade-in-preset: $fade-in-timing-func $fade-in-duration;
+$transition-preset: ease-out 0.3s;

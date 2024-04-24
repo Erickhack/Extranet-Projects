@@ -1,0 +1,77 @@
+.root {
+  position: relative;
+
+  width: 477px;
+  height: 526px;
+}
+
+.root > * {
+  position: absolute;
+}
+
+.bg {
+  top: 9.4%;
+  left: 8.5%;
+}
+
+.shadow {
+  top: 9.4%;
+  left: 25%;
+}
+
+.window {
+  top: 0%;
+  left: 0%;
+}
+
+.windowMask {
+  top: 9.4%;
+  left: 8.5%;
+
+  width: 403px;
+  height: 470px;
+  mask-size: contain;
+}
+
+.fox {
+  @keyframes decentralized-window-fox1 {
+    0% {
+      top: 26%;
+      left: -100%;
+
+      transform: rotate(0deg);
+    }
+    25% {
+      top: 7%;
+      left: 100%;
+
+      transform: rotate(-45deg);
+    }
+    50% {
+      top: -9%;
+      left: -100%;
+
+      transform: rotate(0deg);
+    }
+    75% {
+      top: 7%;
+      left: 120%;
+
+      transform: rotate(45deg);
+    }
+    100% {
+      top: 26%;
+      left: -100%;
+
+      transform: rotate(0deg);
+    }
+  }
+
+  position: absolute;
+
+  animation-name: decentralized-window-fox1;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}

@@ -1,0 +1,177 @@
+.root {
+  position: relative;
+
+  width: 660px;
+  height: 671px;
+}
+
+.root > * {
+  position: absolute;
+}
+
+.stars {
+  @keyframes welcome-coins-stars {
+    0% {
+      opacity: 1;
+
+      transform: translateY(5px);
+    }
+    50% {
+      opacity: 0.6;
+
+      transform: translateY(-5px);
+    }
+    100% {
+      opacity: 1;
+
+      transform: translateY(5px);
+    }
+  }
+  top: 2.5%;
+  left: -2.8%;
+
+  animation-name: welcome-coins-stars;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.star1 {
+  @keyframes welcome-coins-star1 {
+    0% {
+      opacity: 1;
+
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+
+      transform: scale(1);
+    }
+  }
+  top: 83%;
+  left: 100.5%;
+
+  animation-name: welcome-coins-star1;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.star2 {
+  @keyframes welcome-coins-star2 {
+    0% {
+      opacity: 1;
+
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+
+      transform: scale(1);
+    }
+  }
+  top: 6.8%;
+  left: 98.5%;
+
+  animation-name: welcome-coins-star2;
+  animation-duration: 8s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.planet {
+  @keyframes welcome-coins-planet {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  top: 83%;
+  left: 9%;
+
+  animation-name: welcome-coins-planet;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.btc {
+  @keyframes welcome-coins-btc {
+    0% {
+      transform: translateY(0%) rotate(0deg);
+    }
+    50% {
+      transform: translateY(13%) rotate(-15deg);
+    }
+    100% {
+      transform: translateY(0%) rotate(0deg);
+    }
+  }
+  top: 4%;
+  left: 47%;
+
+  animation-name: welcome-coins-btc;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.usdt {
+  @keyframes welcome-coins-usdt {
+    0% {
+      transform: translateY(0%) rotate(0deg);
+    }
+    50% {
+      transform: translateY(10%) rotate(15deg);
+    }
+    100% {
+      transform: translateY(0%) rotate(0deg);
+    }
+  }
+  top: 36%;
+  left: 36%;
+
+  animation-name: welcome-coins-usdt;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.eth {
+  @keyframes welcome-coins-eth {
+    0% {
+      transform: translateY(0%) rotate(0deg);
+    }
+    50% {
+      transform: translateY(7%) rotate(-15deg);
+    }
+    100% {
+      transform: translateY(0%) rotate(0deg);
+    }
+  }
+  top: 62%;
+  left: 69%;
+
+  animation-name: welcome-coins-eth;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}

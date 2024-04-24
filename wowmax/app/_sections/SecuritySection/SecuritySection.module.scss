@@ -1,0 +1,218 @@
+@import '/shared/styles/animations.scss';
+
+.root {
+  @media (width < 1366px) {
+    padding: 56px 20px;
+  }
+
+  padding: 80px;
+}
+
+.animate {
+  .button,
+  .label,
+  .logo {
+    animation: slide-in-base var(--fade-in-preset) forwards;
+  }
+  .headerButton,
+  .details,
+  .image {
+    animation:
+      slide-in-base var(--fade-in-preset) forwards,
+      fade-in-to ease-out var(--fade-in-duration) forwards;
+  }
+  .prefix {
+    animation: fade-in-to ease-out var(--fade-in-duration) forwards;
+  }
+  .backdropLight {
+    animation:
+      growth ease-out 4s infinite,
+      fade-out ease-out 4s infinite;
+  }
+}
+
+.contentWrapper {
+  @media (width <= 1920px) {
+    min-height: 700px;
+  }
+
+  @media (width < 1366px) {
+    min-height: 600px;
+    padding: 56px 20px;
+  }
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 926px;
+  overflow: hidden;
+
+  border: 1px solid var(--color-fg-hacken);
+  border-radius: 36px;
+  box-shadow: 0 17px 110px 0 rgba(62 242 208 / 0.1);
+}
+
+.backdrop,
+.backdropContainer {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.backdropContainer {
+  overflow: hidden;
+}
+
+.backdropBack {
+  @media (width < 1366px) {
+    top: -38%;
+
+    height: 175%;
+  }
+
+  position: absolute;
+  top: -80%;
+
+  height: 260%;
+  aspect-ratio: 2361 / 2419;
+
+  transform: translateY(1%);
+}
+
+.backdropLight {
+  position: absolute;
+
+  transform: scale(3);
+}
+
+.backdropFront {
+  @media (width < 1366px) {
+    top: 24%;
+
+    height: 60%;
+  }
+
+  position: absolute;
+
+  top: -7%;
+
+  height: 117%;
+  aspect-ratio: 355 / 363;
+}
+
+.content {
+  z-index: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.headerButton,
+.button {
+  width: max-content;
+}
+
+.headerButton,
+.details,
+.prefix {
+  opacity: 0;
+}
+
+.headerButton {
+  transform: translateY(-100%);
+}
+
+.details {
+  @media (width < 1366px) {
+    margin-top: 24px;
+
+    font-size: 20px;
+  }
+
+  max-width: 600px;
+  margin-top: 40px;
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-fg-main);
+  text-align: center;
+
+  transform: translateY(-100%);
+}
+
+.prefix {
+  @media (width < 1366px) {
+    margin-top: 60px;
+
+    font-size: 20px;
+  }
+
+  margin-top: 40px;
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-fg-hacken);
+}
+
+.logoWrapper {
+  @media (width < 1366px) {
+    width: 289px;
+    height: 43px;
+
+    margin: 16px 0 32px;
+  }
+
+  display: flex;
+
+  align-items: flex-end;
+
+  width: 1005px;
+  height: 123px;
+  margin: 20px 0 60px;
+  overflow: hidden;
+}
+
+.logo {
+  @media (width < 1366px) {
+    height: 27px;
+  }
+
+  width: 100%;
+  height: 103px;
+
+  transform: translateY(100%);
+}
+
+.label {
+  @media (width <= 1920px) {
+    display: none;
+  }
+
+  @media (width < 1366px) {
+    display: block;
+  }
+
+  margin-top: 60px;
+
+  transform: translateY(400%);
+}
+
+.button {
+  transform: translateY(400%);
+}

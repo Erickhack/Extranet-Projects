@@ -1,0 +1,89 @@
+.root {
+  position: relative;
+
+  width: 900px;
+  height: 716px;
+}
+
+.root > * {
+  position: absolute;
+}
+
+.stars {
+  @keyframes support-fox-stars {
+    0% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  top: 0%;
+  left: 2%;
+
+  animation-name: support-fox-stars;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.planet {
+  top: 9.4%;
+  left: 79%;
+}
+
+@keyframes support-fox-fox {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.planetSeat {
+  top: 77.2%;
+  left: 1%;
+
+  animation-name: support-fox-fox;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.fox {
+  top: 22%;
+  left: 24%;
+
+  animation-name: support-fox-fox;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.text {
+  @keyframes support-fox-text {
+    0% {
+      transform: translateY(0%) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-13%) rotate(-15deg);
+    }
+    100% {
+      transform: translateY(0%) rotate(0deg);
+    }
+  }
+  top: 25%;
+  left: 8%;
+
+  animation-name: support-fox-fox;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}

@@ -1,0 +1,16 @@
+export { WelcomeSection } from './WelcomeSection';
+export { CardsSection } from './CardsSection';
+export { FactListSection } from './FactListSection';
+export { ArbitrageSection } from './ArbitrageSection';
+export { SecuritySection } from './SecuritySection';
+export { BestPriceSection } from './BestPriceSection';
+export { DecentralizedSection } from './DecentralizedSection';
+export { ExchangeSection } from './ExchangeSection';
+export { SupportSection } from './SupportSection';
+export { JoinUsSection } from './JoinUsSection';
+export { PartnershipSection } from './PartnershipSection';
+export { ChainsSection } from './ChainsSection';
+export { BuildSection } from './BuildSection';
+export { WalletsSection } from './WalletsSection';
+export { DefiSection } from './DefiSection';
+export { FAQSection } from './FAQSection';

@@ -1,0 +1,277 @@
+.root {
+  display: flex;
+
+  justify-content: center;
+}
+
+.contentWrapper {
+  @media (width < 1366px) {
+    padding: 0 20px 56px;
+  }
+
+  width: 100%;
+  max-width: 1106px;
+  padding: 80px 0 60px;
+}
+
+.content {
+  @media (width < 1366px) {
+    flex-direction: column;
+
+    padding: 0 0 40px;
+  }
+
+  display: flex;
+
+  width: 100%;
+  padding: 60px 0;
+}
+
+.linksContainer {
+  @media (width < 1366px) {
+    order: 1;
+
+    margin-top: 40px;
+  }
+
+  width: 100%;
+}
+
+.nav {
+  @media (width < 1366px) {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 40px 15px;
+
+    padding-bottom: 40px;
+  }
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 50px;
+
+  padding-bottom: 32px;
+
+  a {
+    color: var(--color-fg-details);
+  }
+}
+
+.column {
+  @media (width < 1366px) {
+    min-width: 160px;
+  }
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--color-fg-main);
+}
+
+.socials {
+  @media (width < 1366px) {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding-top: 40px;
+  }
+
+  padding-top: 32px;
+
+  border-top: 1px solid var(--color-fg-separator);
+}
+
+.card {
+  @media (width < 1366px) {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    max-width: 100%;
+
+    padding: 40px 20px 20px;
+    margin-left: 0;
+  }
+
+  flex-shrink: 0;
+
+  min-width: 334px;
+  max-width: 334px;
+  padding: 40px;
+  margin-left: 32px;
+
+  background-color: var(--color-bg-secondary);
+  border-radius: 36px;
+}
+
+.cardTitle {
+  @media (width < 1366px) {
+    max-width: 294px;
+    margin-top: 16px;
+
+    font-size: 28px;
+    text-align: center;
+  }
+
+  margin-top: 32px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-fg-main);
+}
+
+.cardDetails {
+  margin-top: 16px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-fg-details);
+}
+
+.cardHeaderButton {
+  max-width: max-content;
+}
+
+.cardFooterButton {
+  @media (width < 1366px) {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  margin-top: 42px;
+}
+
+.footer {
+  @media (width < 1366px) {
+    flex-direction: column;
+
+    gap: 16px;
+
+    align-items: center;
+  }
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-top: 16px;
+
+  border-top: 1px solid var(--color-fg-separator);
+}
+
+.footerText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-fg-details-secondary);
+  text-align: center;
+}
+
+.socialsLinks {
+  @media (width < 1366px) {
+    gap: 16px;
+
+    margin-top: 24px;
+  }
+
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 16px;
+}
+
+.socialsLink {
+  @media (width < 1366px) {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 15px;
+  }
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  background-color: var(--color-bg-secondary);
+  border-radius: 18px;
+
+  fill: var(--color-fg-main);
+
+  transition: background-color var(--transition-preset);
+
+  &:hover {
+    background-color: var(--color-bg-main);
+  }
+}
+
+.icon {
+  &_mirror {
+    @media (width < 1366px) {
+      width: 16px;
+      height: 20px;
+    }
+
+    width: 20px;
+    height: 25px;
+  }
+  &_twitter {
+    @media (width < 1366px) {
+      width: 19px;
+      height: 17px;
+    }
+
+    width: 24px;
+    height: 21px;
+  }
+  &_discord {
+    @media (width < 1366px) {
+      width: 21px;
+      height: 15px;
+    }
+
+    width: 26px;
+    height: 19px;
+  }
+  &_telegram {
+    @media (width < 1366px) {
+      width: 21px;
+      height: 17px;
+    }
+
+    width: 26px;
+    height: 22px;
+  }
+  &_db {
+    @media (width < 1366px) {
+      width: 17px;
+      height: 20px;
+    }
+
+    width: 22px;
+    height: 25px;
+  }
+}

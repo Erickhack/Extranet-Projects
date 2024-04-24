@@ -1,0 +1,41 @@
+.root {
+  @media (width <= 1920px) {
+    padding: 16px var(--container-paddings-lg);
+  }
+
+  @media (width < 1366px) {
+    display: flex;
+
+    min-height: 56px;
+    padding: 4px 20px;
+  }
+
+  display: grid;
+
+  grid-template-columns: repeat(3, auto);
+
+  gap: 8px 28px;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px var(--container-paddings-xl);
+
+  background-color: var(--color-bg-overlay);
+  backdrop-filter: blur(8px);
+}
+
+.nav,
+.button {
+  @media (width < 1366px) {
+    display: none;
+  }
+}
+
+.burger {
+  @media (width < 1366px) {
+    display: block;
+  }
+
+  display: none;
+}

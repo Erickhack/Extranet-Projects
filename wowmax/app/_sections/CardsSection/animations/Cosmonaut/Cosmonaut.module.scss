@@ -1,0 +1,110 @@
+.root {
+  position: relative;
+
+  width: 882px;
+  height: 771px;
+}
+
+.root > * {
+  position: absolute;
+}
+
+.stars {
+  @keyframes exchange-fox-stars {
+    0% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  top: 0%;
+  left: 12%;
+
+  animation-name: exchange-fox-stars;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.planet {
+  top: 9.4%;
+  left: 79%;
+}
+
+@keyframes exchange-fox-fox {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.planetSeat {
+  top: 47.5%;
+  left: 1%;
+
+  animation-name: exchange-fox-fox;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.fox {
+  top: 14%;
+  left: 11.7%;
+
+  animation-name: exchange-fox-fox;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.coin {
+  @keyframes exchange-fox-coin {
+    0% {
+      transform: translateY(0%) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-13%) rotate(-15deg);
+    }
+    100% {
+      transform: translateY(0%) rotate(0deg);
+    }
+  }
+  top: 32%;
+  left: 19%;
+
+  animation-name: exchange-fox-coin;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.card {
+  @keyframes exchange-fox-card {
+    0% {
+      transform: translateY(0%) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-13%) rotate(15deg);
+    }
+    100% {
+      transform: translateY(0%) rotate(0deg);
+    }
+  }
+  top: 30%;
+  left: 63%;
+
+  animation-name: exchange-fox-card;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}

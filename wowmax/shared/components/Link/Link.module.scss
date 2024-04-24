@@ -1,0 +1,15 @@
+.root {
+  display: inline-block;
+}
+
+.textBased {
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-fg-details);
+
+  transition: color var(--transition-preset);
+
+  &:hover {
+    color: var(--color-fg-main-active);
+  }
+}

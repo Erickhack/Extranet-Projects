@@ -1,0 +1,151 @@
+@import '/shared/styles/animations.scss';
+
+.root {
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+}
+
+.animate {
+  .title,
+  .button {
+    animation: slide-in-base var(--fade-in-preset) forwards;
+  }
+}
+
+.content {
+  @media (width < 1366px) {
+    padding: 80px 32px;
+  }
+
+  @media (width < 768px) {
+    padding: 56px 20px;
+  }
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  width: 100%;
+  max-width: 1106px;
+  padding: 120px 0;
+}
+
+.button {
+  width: max-content;
+
+  transform: translateY(100%);
+}
+
+.title {
+  @media (width < 1366px) {
+    max-width: 500px;
+    margin: 32px 0;
+
+    font-size: 34px;
+  }
+
+  max-width: 900px;
+  margin: 40px 0;
+
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-fg-main);
+  text-align: center;
+
+  transform: translateY(100%);
+}
+
+.listWrapper {
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+}
+
+.list {
+  @media (width < 1366px) {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+
+    justify-content: flex-start;
+
+    width: 100%;
+  }
+
+  @media (width < 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(163px, 1fr));
+  }
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  justify-content: center;
+}
+
+.card {
+  @media (width < 1366px) {
+    gap: 12px;
+
+    min-width: 229px;
+    max-width: 100%;
+    min-height: 173px;
+    padding: 20px;
+  }
+
+  @media (width < 768px) {
+    min-width: 163px;
+  }
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-grow: 1;
+
+  gap: 16px;
+
+  align-items: center;
+
+  max-width: 214px;
+  min-height: 217px;
+  padding: 40px;
+
+  background-color: var(--color-bg-base);
+  border: 1px solid var(--color-fg-separator);
+  border-radius: 36px;
+
+  transition: background-color var(--transition-preset);
+
+  &:hover {
+    background-color: var(--color-bg-secondary);
+  }
+}
+
+.soon {
+  background: no-repeat center url('/images/soon-pattern.svg');
+  background-color: var(--color-bg-secondary);
+  background-size: cover;
+}
+
+.cardLogo {
+  width: 100px;
+  height: 100px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  color: var(--color-fg-details);
+}
